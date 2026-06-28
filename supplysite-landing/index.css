@@ -163,6 +163,31 @@ img {
   width: auto;
 }
 
+.header-nav {
+  display: none;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .header-nav {
+    display: flex;
+  }
+}
+
+.nav-link {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-slate-600);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.nav-link:hover {
+  color: var(--color-brand-orange);
+}
+
 .header-cta-btn {
   display: inline-flex;
   align-items: center;
