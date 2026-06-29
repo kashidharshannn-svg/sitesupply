@@ -214,19 +214,18 @@ img {
   fill: currentColor;
 }
 
-/* --- Hero Section with Construction Background & Dark Overlay --- */
 .hero-section {
   position: relative;
-  background-color: #f8fafc; /* clean off-white background */
-  background-image: linear-gradient(rgba(226, 232, 240, 0.78), rgba(226, 232, 240, 0.84)), url('_images/hero_b2b_wholesale_bg.png');
+  background-color: #090e1a; /* deep brand navy */
+  background-image: linear-gradient(rgba(9, 14, 26, 0.72), rgba(9, 14, 26, 0.82)), url('_images/hero_b2b_wholesale_bg.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: var(--color-slate-950);
+  color: white;
   padding-top: 4.5rem;
   padding-bottom: 5rem;
   overflow: hidden;
-  border-bottom: 1px solid var(--color-slate-200);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 
@@ -265,7 +264,7 @@ img {
 .hero-headline {
   font-size: 1.75rem;
   font-weight: 850;
-  color: var(--color-slate-950);
+  color: white;
   line-height: 1.2;
   margin-bottom: 0.75rem;
   text-shadow: none;
@@ -277,7 +276,7 @@ img {
 
 .hero-subheadline {
   font-size: 0.925rem;
-  color: var(--color-slate-600);
+  color: var(--color-slate-300);
   line-height: 1.45;
   margin-bottom: 1rem;
 }
@@ -2033,12 +2032,12 @@ img {
   align-items: center;
   gap: 0.75rem;
   font-size: 0.9rem;
-  color: var(--color-slate-700);
+  color: var(--color-slate-200);
   line-height: 1.4;
 }
 
 .hero-usps-list li strong {
-  color: var(--color-slate-950);
+  color: white;
   font-weight: 750;
 }
 
@@ -2068,28 +2067,28 @@ img {
 }
 
 .hero-cement-item {
-  background-color: white;
-  border: 1px solid var(--color-slate-200);
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 12px;
   padding: 0.5rem 0.75rem;
   display: flex;
   align-items: center;
   gap: 0.65rem;
-  box-shadow: var(--shadow-sm);
-  transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  transition: transform var(--transition-fast), border-color var(--transition-fast), background-color var(--transition-fast);
 }
 
 .hero-cement-item:hover {
   transform: translateY(-2px);
   border-color: var(--color-brand-orange);
-  box-shadow: var(--shadow-md);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .hero-cement-img {
   height: 48px;
   width: auto;
   object-fit: contain;
-  filter: drop-shadow(0 4px 6px rgba(9, 14, 26, 0.08));
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
 }
 
 .hero-cement-details {
@@ -2101,13 +2100,13 @@ img {
   font-family: var(--font-display);
   font-size: 0.85rem;
   font-weight: 800;
-  color: var(--color-slate-950);
+  color: white;
   line-height: 1.2;
 }
 
 .hero-cement-sub {
   font-size: 0.675rem;
-  color: var(--color-slate-500);
+  color: var(--color-slate-400);
   font-weight: 500;
   margin-top: 0.1rem;
 }
