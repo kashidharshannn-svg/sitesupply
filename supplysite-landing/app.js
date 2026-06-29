@@ -210,15 +210,16 @@ function initCallbackForm() {
 
     const textMessage = `Hi SiteSupply, I've requested a callback via your website.\n\n*Name:* ${name}\n*Phone:* ${phone}\n*Material Needed:* ${material}\n\nPlease contact me at your earliest convenience with pricing details.`;
     const targetUrl = `https://api.whatsapp.com/send/?phone=${WHATSAPP_PHONE}&text=${encodeURIComponent(textMessage)}&type=phone_number&app_absent=0`;
+    const thankYouUrl = `thank-you.html?name=${encodeURIComponent(name)}&redirect=${encodeURIComponent(targetUrl)}`;
 
     // Visual loading state
     const submitBtn = form.querySelector('.btn-form-submit');
     const originalText = submitBtn.textContent;
-    submitBtn.textContent = 'Redirecting to WhatsApp...';
+    submitBtn.textContent = 'Processing request...';
     submitBtn.disabled = true;
 
     setTimeout(() => {
-      window.location.href = targetUrl;
+      window.location.href = thankYouUrl;
       // Restore state after a short delay in case user navigates back
       setTimeout(() => {
         submitBtn.textContent = originalText;
