@@ -218,7 +218,7 @@ img {
 .hero-section {
   position: relative;
   background-color: #f8fafc; /* clean off-white background */
-  background-image: linear-gradient(rgba(248, 250, 252, 0.9), rgba(248, 250, 252, 0.94)), url('_images/hero_b2b_wholesale_bg.png');
+  background-image: linear-gradient(rgba(226, 232, 240, 0.78), rgba(226, 232, 240, 0.84)), url('_images/hero_b2b_wholesale_bg.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
