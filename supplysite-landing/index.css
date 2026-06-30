@@ -217,7 +217,7 @@ img {
 .hero-section {
   position: relative;
   background-color: #090e1a; /* deep brand navy */
-  background-image: linear-gradient(rgba(9, 14, 26, 0.72), rgba(9, 14, 26, 0.82)), url('_images/hero_b2b_wholesale_bg.png');
+  background-image: linear-gradient(rgba(9, 14, 26, 0.82), rgba(9, 14, 26, 0.92)), url('_images/hero_b2b_wholesale_bg.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
