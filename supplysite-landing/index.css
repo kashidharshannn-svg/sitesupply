@@ -2133,14 +2133,8 @@ img {
   margin-top: 0.1rem;
 }
 
-/* Tablet & Mobile Adjustments */
+/* Tablet & Mobile Adjustments (All screens under 768px) */
 @media (max-width: 768px) {
-  .hero-usps-list {
-    margin-bottom: 1.25rem;
-  }
-}
-
-@media (max-width: 480px) {
   .container {
     padding-left: 1rem;
     padding-right: 1rem;
