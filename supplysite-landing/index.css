@@ -2177,33 +2177,37 @@ img {
     margin-top: 0.1rem;
   }
   .hero-cement-row {
-    flex-direction: row;
-    flex-wrap: nowrap; /* Keep them strictly side-by-side */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Force exact 50/50 side-by-side split */
     gap: 0.5rem;
     width: 100%;
   }
   .hero-cement-item {
-    flex: 1; /* Equal width distribution */
-    min-width: 0; /* Allow items to shrink and fit */
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
     padding: 0.4rem 0.5rem;
     border-radius: 10px;
-    gap: 0.4rem;
+    min-width: 0; /* Enable truncation inside grid item */
+    overflow: hidden; /* Prevent text overflow from stretching grid item */
   }
   .hero-cement-img {
-    height: 36px; /* Slightly smaller height to prevent box height issues */
+    height: 36px;
     flex-shrink: 0;
   }
   .hero-cement-name {
-    font-size: 0.725rem; /* Compact font for small viewports */
+    font-size: 0.725rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    display: block;
   }
   .hero-cement-sub {
     font-size: 0.55rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    display: block;
   }
   .hero-card {
     padding: 1.5rem 1.25rem;
