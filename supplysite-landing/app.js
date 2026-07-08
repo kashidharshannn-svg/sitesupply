@@ -26,7 +26,7 @@ function initPromoPopup() {
     setTimeout(() => {
       dialog.showModal();
       sessionStorage.setItem('promo_popup_shown', 'true');
-    }, 20000);
+    }, 30000);
   }
 
   // Close button click
