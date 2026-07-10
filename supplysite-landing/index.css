@@ -515,6 +515,234 @@ img {
   transform: translateY(0) scale(0.97);
 }
 
+/* --- Google Reviews & Testimonials Section --- */
+.reviews-section {
+  padding: 5rem 0;
+  background-color: var(--color-slate-50);
+  border-top: 1px solid var(--color-slate-200);
+}
+
+.reviews-header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 3.5rem auto;
+}
+
+.gmb-summary-card {
+  background-color: white;
+  border: 1px solid var(--color-slate-200);
+  border-radius: 16px;
+  padding: 1.25rem 2rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 2rem;
+  box-shadow: var(--shadow-sm);
+  margin-top: 1.5rem;
+}
+
+.gmb-logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.gmb-logo-img {
+  height: 28px;
+  width: auto;
+}
+
+.gmb-brand-name {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--color-slate-800);
+}
+
+.gmb-rating-stats {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.25rem;
+}
+
+.gmb-rating-number {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--color-slate-900);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.gmb-stars-svg {
+  display: flex;
+  gap: 2px;
+}
+
+.gmb-stars-svg svg {
+  width: 18px;
+  height: 18px;
+  fill: #ffb300;
+}
+
+.gmb-review-count {
+  font-size: 0.825rem;
+  color: var(--color-slate-500);
+}
+
+.btn-gmb-write {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: white;
+  color: var(--color-slate-800);
+  border: 1px solid var(--color-slate-300);
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.btn-gmb-write:hover {
+  background-color: var(--color-slate-50);
+  border-color: var(--color-slate-400);
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.review-card {
+  background-color: white;
+  border: 1px solid var(--color-slate-200);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.25s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-brand-orange);
+}
+
+.review-author-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.review-author-avatar {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  background-color: var(--color-slate-100);
+  color: var(--color-slate-700);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  border: 1px solid var(--color-slate-200);
+}
+
+.review-author-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.review-author-name {
+  font-weight: 700;
+  font-size: 0.925rem;
+  color: var(--color-slate-800);
+}
+
+.review-badge-verified {
+  font-size: 0.725rem;
+  font-weight: 600;
+  color: #0d9488;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.review-stars {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 0.75rem;
+}
+
+.review-stars svg {
+  width: 14px;
+  height: 14px;
+  fill: #ffb300;
+}
+
+.review-content {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--color-slate-600);
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+.review-date-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px dashed var(--color-slate-200);
+  padding-top: 0.85rem;
+  margin-top: auto;
+}
+
+.review-date {
+  font-size: 0.775rem;
+  color: var(--color-slate-400);
+}
+
+.review-source-google {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.775rem;
+  color: var(--color-slate-400);
+}
+
+.reviews-cta-container {
+  text-align: center;
+}
+
+.btn-gmb-all-reviews {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  background-color: var(--color-slate-900);
+  color: white;
+  padding: 0.9rem 2rem;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.15);
+  transition: all 0.2s ease;
+}
+
+.btn-gmb-all-reviews:hover {
+  background-color: var(--color-slate-800);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.25);
+}
+
 /* --- High-Energy Trust Strip Section (B2B Badges Overhaul) --- */
 .trust-strip {
   background-color: var(--color-slate-950);
@@ -2265,5 +2493,35 @@ img {
   }
   .trust-item p {
     font-size: 0.775rem;
+  }
+  
+  /* Responsive Reviews Section styles */
+  .reviews-section {
+    padding: 3.5rem 0;
+  }
+  .gmb-summary-card {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.25rem;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .gmb-rating-stats {
+    align-items: center;
+  }
+  .reviews-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  .review-card {
+    padding: 1.25rem;
+  }
+  .btn-gmb-all-reviews {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.875rem;
+    width: 100%;
+    justify-content: center;
   }
 }
