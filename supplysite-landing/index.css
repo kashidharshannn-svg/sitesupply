@@ -2383,6 +2383,9 @@ img {
     line-height: 1.25;
     margin-bottom: 0.75rem;
   }
+  .hero-headline .text-orange-gradient {
+    white-space: normal;
+  }
   .hero-subheadline {
     font-size: 0.85rem;
     line-height: 1.45;
